@@ -144,7 +144,7 @@ function checkIfPetHappy() {
   if (pet_info.happiness <= 0) {
     petIsHappy = false;
 
-    document.querySelector(".pet-image").setAttribute("src", "images/Shoebill-Stork.jpg");
+    document.querySelector(".pet-image").setAttribute("src", "images/shoebill-stork.jpg");
     document.querySelector(".pet-image").setAttribute("alt", "Billy is Angry with you.");
   }
 }
