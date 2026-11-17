@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+  text-align: center;
+  position: relative;
+  isolation: isolate;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+  z-index: -1;
+  pointer-events: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+  height: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  color: #000;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  padding-top: 25px;
+  border-top: 1px solid black;
+}
+
+footer a {
+  margin: 5px;
+}
+
+.pet-image {
+  height: 250px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.3));
+}
+
+.dashboard div {
+  display: block;
+}
+
+.pet-image-container {
+  float: none;
+  padding: 18px;
+}
+
+.dashboard {
+  float: none;
+  padding: 20px;
+  text-align: center;
+  color: #17202a;
+}
+
+.pet-image-container,
+.dashboard {
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 2px solid rgba(30, 40, 53, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-container button {
+  width: 100px;
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  background-color: #1e2835;
+  border-color: #404853;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom,
+      rgba(246, 246, 246, 0.1) 0%,
+      rgba(30, 40, 53, 0) 66%);
+  color: #fafafa;
+}
+
+.pet-message {
+  display: none;
+  min-height: 1.5em;
+  max-width: 600px;
+  margin: 20px auto 0;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff3c4;
+}
+
