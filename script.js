@@ -17,8 +17,8 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
 var petMessageTimer;
 var petIsHappy = true;
 var petIsAlive = true;
-var happySound = new Audio('/sounds/happy.mp3');
-var treatSound = new Audio('/sounds/treat.mp3');
+var happySound = new Audio('sounds/happy.mp3');
+var treatSound = new Audio('sounds/treat.mp3');
 
 // Add a variable "pet_info" equal to a object with the name (string), weight (number), and happiness (number) of your pet
 var pet_info = {name:"Billy", weight: 12, happiness: 1, sleepiness: 0};
@@ -144,7 +144,7 @@ function checkIfPetHappy() {
   if (pet_info.happiness <= 0) {
     petIsHappy = false;
 
-    document.querySelector(".pet-image").setAttribute("src", "/images/Shoebill-Stork.jpg");
+    document.querySelector(".pet-image").setAttribute("src", "images/Shoebill-Stork.jpg");
     document.querySelector(".pet-image").setAttribute("alt", "Billy is Angry with you.");
   }
 }
@@ -153,7 +153,7 @@ function checkIfPetDies() {
   if (pet_info.weight <= 0) {
     petIsAlive = false;
 
-    document.querySelector(".pet-image").setAttribute("src", "/images/sleeping-stork.jpeg");
+    document.querySelector(".pet-image").setAttribute("src", "images/sleeping-stork.jpeg");
     document.querySelector(".pet-image").setAttribute("alt", "Billy is only sleeping.");
   }
 }
